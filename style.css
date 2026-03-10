@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+
+    /* Black to deep navy blue gradient */
+    background: linear-gradient(
+        to bottom,
+        #000000 0%,
+        #01030a 20%,
+        #02081a 40%,
+        #030f2b 60%,
+        #04163a 80%,
+        #051a44 100%
+    );
+
+    color: white;
+    line-height: 1.6;
+    font-size: 16px;
+
+    min-height: 100vh;
+}
+
+/* Adaptive text contrast */
+body, h1, h2, h3, p, a, strong, em {
+    mix-blend-mode: difference;
+}
+
+/* Links and Emails */
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header.logo-container {
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+.studio-logo {
+    max-width: 90%;
+    height: auto;
+}
+
+/* Main Layout */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Titles */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Credits Highlight */
+section h2 + p strong,
+section h2 + p em {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    font-size: 14px;
+}
+
+/* Subtitles inside sections */
+h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Lists and text alignment */
+ul, p {
+    margin-left: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+}
+
+/* Credits styling */
+.credits strong {
+    color: white;
+}
+
+.credits em {
+    opacity: 0.8;
+}
