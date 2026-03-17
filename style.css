@@ -9,16 +9,17 @@
 body {
     font-family: 'Arial', sans-serif;
 
-    /* Black to deep navy blue gradient */
+    /* Animated deep RGB gradient */
     background: linear-gradient(
         to bottom,
         #000000 0%,
-        #01030a 20%,
-        #02081a 40%,
-        #030f2b 60%,
-        #04163a 80%,
-        #051a44 100%
+        #000000 25%,
+        #02081a 60%,
+        #04163a 100%
     );
+
+    background-size: 400% 400%;
+    animation: rgbShift 90s ease infinite;
 
     color: white;
     line-height: 1.6;
@@ -139,4 +140,69 @@ ul, p {
 
 .credits em {
     opacity: 0.8;
+}
+
+/* RGB Gradient Animation */
+@keyframes rgbShift {
+
+    0% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #0b0b2e 60%,
+            #1a0033 100%
+        );
+    }
+
+    20% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #001a33 60%,
+            #003344 100%
+        );
+    }
+
+    40% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #003322 60%,
+            #004422 100%
+        );
+    }
+
+    60% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #332200 60%,
+            #442200 100%
+        );
+    }
+
+    80% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #330011 60%,
+            #440022 100%
+        );
+    }
+
+    100% {
+        background: linear-gradient(
+            to bottom,
+            #000000 0%,
+            #000000 25%,
+            #0b0b2e 60%,
+            #1a0033 100%
+        );
+    }
+
 }
